@@ -19,12 +19,5 @@
   },
   "devDependencies": {
     "dts2hx": "^0.20.0"
-  },
-  "typesVersions": {
-    "<4.0": {
-      "*": [
-        "ts3.4/*"
-      ]
-    }
   }
 }
