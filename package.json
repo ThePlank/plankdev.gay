@@ -1,23 +1,19 @@
 {
   "name": "plankdev-gay",
+  "react": "^18.3.1",
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro",
-    "postinstall": "dts2hx --all"
+    "astro": "astro"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
     "@astrojs/preact": "^3.5.3",
-    "astro": "^4.16.6",
-    "downlevel-dts": "^0.11.0",
+    "astro": "^4.16.18",
     "preact": "^10.24.3",
     "typescript": "^5.6.3"
-  },
-  "devDependencies": {
-    "dts2hx": "^0.20.0"
   }
 }

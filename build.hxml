@@ -1,6 +1,0 @@
--L preact
--cp haxesrc
-TestComponent
--D js-es=6
--D shallow-expose
---js src/hx/react.tsx

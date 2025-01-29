@@ -1,0 +1,67 @@
+#topbar {
+	background: linear-gradient(#EFEFEFD9, #B0B0B0D9);
+	padding-left: .25em;
+	padding-right: .25em;
+	display: flex;
+	box-shadow: 0px 10px 30px -8px rgba(0,0,0,0.75);
+	background-blend-mode: multiply;
+}
+
+#mainTopbarButton::before {
+	content: '';
+	background: url('../topicon.svg');
+	background-size: 2em;
+	width: 2em;
+	height: 2em;
+	display: inline-block;
+	position: relative; 
+	left: -25%;
+	top: -5%;
+}
+
+#mainTopbarButton {
+	width: 2em;
+	height: 2em;
+}
+
+#mainTopbarButton:active::before {
+	filter: invert(100%);
+}
+
+.topbarButton {
+	background: transparent;
+	border: none;
+	display: block;
+	height: 100%;
+}
+
+.topbarButton:active {
+	color: white;
+	background: linear-gradient(to bottom, #3990f9, #1c75e1) !important;
+}
+
+.topbarEntry {
+	position: relative;
+}
+
+.topbarDropdown {
+	flex-direction: column;
+	position: absolute;
+	background: #FFFFFFEE;
+	left: 0%;
+	top: 100%;
+	border-bottom-right-radius: .25em;
+	border-bottom-left-radius: .25em;
+	box-shadow: 0px 10px 30px -8px rgba(0,0,0,0.75);
+}
+
+.topbarDropdownButton:hover {
+	color: white;
+	background: linear-gradient(to bottom, #3990f9, #1c75e1) !important;
+}
+
+.topbarDropdownButton {
+	height: 16pt;
+	text-align: left;
+	white-space: nowrap;
+}
