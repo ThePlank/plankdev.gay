@@ -2,10 +2,13 @@
 interface Props {
 	title: string;
 	description: string;
+	dropdown: any;
 }
 
-const { title, description } = Astro.props;
+const { title, description, dropdown } = Astro.props;
 import { Topbar } from '../components/Topbar';
+import '../css/window.css';
+import '../css/general.css';
 ---
 
 <!doctype html>
@@ -22,15 +25,16 @@ import { Topbar } from '../components/Topbar';
 		<title>{title}</title>
 	</head>
 	<body>
-		<Topbar buttons={[{name: 'test', dropdown: ['hi', 'haiiiiii', ':>', ':<']}, {name: 'colon the third', dropdown: [':3', ':3', ':3', ':3']}]}/>
-		<slot />
+		<Topbar buttons={dropdown} client:load/>
+		<slot/>
 	</body>
 </html>
+
 <style is:global>
 	body {
-		margin: 0;
-		padding: 0;
-		font-family: 'Nunito Sans', system-ui, sans-serif;
-		background: url('../../public/Aurora.jpg');
+		background: url('/Aurora.jpg');
+		background-position: top;
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
 </style>

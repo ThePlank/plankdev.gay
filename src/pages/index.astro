@@ -1,8 +1,34 @@
 ---
+import { Container } from '../components/Container';
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="plank" description="index">
-	<main>
+<Layout title="plank" description="index" dropdown={[
+														{name: 'Special', dropdown: [
+															['explode', () => console.log('fag')]
+														]}
+													]}>
+	<main class="window">
+		<Container>
+			<img src='welcome/slightlyEmbarrasedAurora.png' class="squareify" width="182em"/>
+			<div style="flex: 1;" class="containerText">
+				<h1 class="title">hi yes hi hello</h1>
+				<h1 class="title">i am quite an odd person</h1>
+			</div>
+		</Container>
+		<p>with that out of the way, hello there, i'm plank or <a>aurora</a> or whatever. i draw a concerning ammount of women, code a bunch of not very useful stuff and make ear bleeding music i think</p>
+		<p>what, you think otherwise? just go to my <a href="/projects">Projects</a> and <a href="/characters">Characters</a> pages in the <a class="auroraMenuMention">Aurora Menu</a></p>
+		<Container>
+			<p class="containerText" style="font-size: 24pt;">from the design of this site, you can see that im a <em>bit</em> of a old computer freak and that would be correct!</p>
+			<img src='welcome/auroraQuadra700.png' class="squareify" width="182em"/>
+		</Container>
+		<br/><br/>
+		<Container>
+			<img src='welcome/auroraThinkingAboutWomen.png' class="squareify" width="182em"/>
+			<div style="flex: 1;" class="containerText">
+				<p style="font-size: 24pt;">im a <a href="https://en.pronouns.page/terminology?filter=transbian">transbian</a><sub class="tiny">(also known as being a <a href="https://en.pronouns.page/terminology?filter=trans+woman">trans woman</a> and <a href="https://en.pronouns.page/terminology?filter=lesbian">lesbian</a>)</sub> and go by she/her</p>
+			</div>
+		</Container>
+		<sub>by the way, i have aspergers. if i do anything stupid please just tell me. i'm not able to infer if i did something bad and i just have to live like that</sub>
 	</main>
 </Layout>

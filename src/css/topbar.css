@@ -4,12 +4,16 @@
 	padding-right: .25em;
 	display: flex;
 	box-shadow: 0px 10px 30px -8px rgba(0,0,0,0.75);
-	background-blend-mode: multiply;
+}
+
+#topbarLeftside {
+	display: flex;
+	flex: 1;
 }
 
 #mainTopbarButton::before {
 	content: '';
-	background: url('../topicon.svg');
+	background: url('topicon.svg');
 	background-size: 2em;
 	width: 2em;
 	height: 2em;
@@ -53,6 +57,7 @@
 	border-bottom-right-radius: .25em;
 	border-bottom-left-radius: .25em;
 	box-shadow: 0px 10px 30px -8px rgba(0,0,0,0.75);
+	z-index: 3480957048265708345276 !important;
 }
 
 .topbarDropdownButton:hover {
